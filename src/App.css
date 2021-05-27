@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+/* --alice-blue: #f1f5f8ff;
+--beau-blue: #d5dfe8ff;
+--purple-navy: #404e7cff;
+--russian-violet: #251f47ff;
+--dark-purple: #260f26ff;
+--orange-yellow-crayola: #ffd863ff;
+--verdigris: #0aaeb8ff; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slide {
+	width: 100vw;
+	height: 90vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+	font-size: 3.5em;
 }
-
-.App-link {
-  color: #61dafb;
+.slide-1 {
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-3.jpg') center center
+		no-repeat;
+	background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide-2 {
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-2.jpg') center center
+		no-repeat;
+	background-size: cover;
+}
+.slide-3 {
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-1.jpg') center center
+		no-repeat;
+	background-size: cover;
+}
+.slide-title {
+	position: relative;
+}
+.slide-title:before {
+	content: '';
+	background: #38adb6;
+	width: 25px;
+	height: 3px;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.brand {
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 0.9;
+}
+.brand-icon {
+	width: 10%;
+}
+.brand > svg {
+	fill: #0aaeb8ff;
+}
+.subtitle {
+	font-size: 0.6em;
+	font-weight: 400;
+}
+.btn-app {
+	background-color: #ffd863ff;
+	color: black;
+	font-weight: 600;
+	transition: 0.3s;
+	border: none;
+	text-transform: uppercase;
+}
+.btn-gray {
+	background-color: #38373c;
+	color: #ffffff;
+	border: #38373c;
+}
+.btn-app:hover {
+	background-color: #0aaeb8ff;
+	color: #fff;
+}
+.app-icons {
+	width: 7%;
+	fill: #0aaeb8ff;
+}
+.app-icons-promo {
+	width: 65px;
+	height: 65px;
+	font-weight: 300;
+}
+.app-icons-promo path {
+	fill: #fff;
+}
+.promo-card {
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+	border: 1px solid #fff;
+	transition: 0.3s;
+}
+.promo-card:hover {
+	background-color: #ffd863ff;
+	color: black;
+	transform: translate(0, -5%);
+}
+.regular {
+	font-size: 1.2em;
+}
+.promo-img {
+	height: 435px;
+	background: url('http://layerdrops.com/loazzne/assets/images/about-2-1.jpg') no-repeat center
+		center;
+	background-size: cover;
+}
+.promo-img:before {
+	content: '';
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	z-index: -1;
+	top: -10px;
+	left: -10px;
+	background-color: #ffd763;
+}
+.promo-img:after {
+	content: '';
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	z-index: -1;
+	bottom: -10px;
+	right: -10px;
+	background-color: #09aeb8;
+}
+.about-details::before {
+	content: '';
+	background: #38adb6;
+	width: 25px;
+	height: 3px;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.service-card,
+.service-card h2,
+.service-card p,
+.service-card img {
+	transition: 0.3s;
+}
+.service-card:hover > h2,
+.service-card:hover > p {
+	background-color: #38373c;
+}
+.service-card:hover > img {
+	filter: brightness(40%);
+}
+.service-card:hover > h2 {
+	color: #ffd863ff;
+}
+.service-card:hover > button {
+	background-color: #ffd863ff;
+	color: black;
+}
+.service-card:hover > p {
+	color: #fff;
+}
+.white {
+	background-color: #fff;
+}
+.al-bl {
+	background-color: #f1f5f8ff;
+}
+.orange {
+	background-color: #ffd863ff;
+	fill: #ffd863ff;
+}
+.verdigris {
+	background-color: #0aaeb8ff;
+}
+.third-promo-section::before {
+	content: '';
+	background-color: #000000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+}
+.third-promo-section {
+	z-index: 1;
+	position: relative;
+	background: #38373c url('http://layerdrops.com/loazzne/assets/images/ac-skew-1.jpg') center
+		no-repeat;
+	background-size: cover;
+}
+.third-promo-section::after {
+	content: '';
+	background-image: url('http://layerdrops.com/loazzne/assets/images/shape/service-shape.png');
+	position: absolute;
+	left: 50%;
+	margin-left: -233.5px;
+	top: 0;
+	z-index: 1;
+	width: 467px;
+	height: 460px;
+	background-size: cover;
+	border-radius: 50%;
+}
+.cta-text {
+	z-index: 999;
+	transition: 0.3s;
+}
+.cta-text:hover {
+	background-color: #0aaeb8ff;
+	color: white;
+}
+@media screen and (max-width: 767px) {
+	.third-promo-section::after {
+		display: none;
+	}
 }
