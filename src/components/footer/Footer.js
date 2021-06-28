@@ -1,4 +1,11 @@
-import { Container, Row, Col, Button, Form, FormControl } from 'react-bootstrap';
+import {
+	Container,
+	Row,
+	Col,
+	Button,
+	Form,
+	FormControl,
+} from 'react-bootstrap';
 import { getIcon } from './../common/Icon/Icons';
 export const Footer = () => (
 	<Container fluid className="bg-dark text-white pt-2">
@@ -12,7 +19,8 @@ export const Footer = () => (
 				</Col>
 				<Col className="col-12 text-lg-center border-right border-secondary col-lg">
 					<p>
-						{getIcon('email2')}Email <span className="text-secondary">help@example.com</span>
+						{getIcon('email2')}Email{' '}
+						<span className="text-secondary">help@example.com</span>
 					</p>
 				</Col>
 				<Col className="text-lg-center col-12 col-lg">
@@ -28,8 +36,8 @@ export const Footer = () => (
 				<Col className="col-12 col-md">
 					<h5>About BrandLink</h5>
 					<p className="text-secondary pr-lg-5 mr-lg-5">
-						At BrandLink, We don’t just provide resi-dential and commercial heating and air
-						conditioning services; we make people’s lives easier. Better.
+						At BrandLink, We don’t just provide resi-dential and commercial heating
+						and air conditioning services; we make people’s lives easier. Better.
 					</p>
 				</Col>
 				<Col>
@@ -42,7 +50,9 @@ export const Footer = () => (
 							className="mr-2 w-lg-50"
 							autoComplete="tel"
 						/>
-						<Button className="btn-app p-2 pl-3 pr-3 mt-3 mt-lg-0 ">Замовити дзвінок</Button>
+						<Button className="btn-app p-2 pl-3 pr-3 mt-3 mt-lg-0 ">
+							Замовити дзвінок
+						</Button>
 					</Form>
 				</Col>
 			</Row>

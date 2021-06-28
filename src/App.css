@@ -15,22 +15,26 @@ body {
 	width: 100vw;
 	height: 90vh;
 }
+.container-wrapper {
+	width: 100vw;
+	height: 100vh;
+}
 .title {
 	font-size: 3.5em;
 }
 .slide-1 {
-	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-3.jpg') center center
-		no-repeat;
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-3.jpg')
+		center center no-repeat;
 	background-size: cover;
 }
 .slide-2 {
-	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-2.jpg') center center
-		no-repeat;
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-2.jpg')
+		center center no-repeat;
 	background-size: cover;
 }
 .slide-3 {
-	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-1.jpg') center center
-		no-repeat;
+	background: url('http://layerdrops.com/loazzne/assets/images/slider/slider-1.jpg')
+		center center no-repeat;
 	background-size: cover;
 }
 .slide-title {
@@ -107,8 +111,8 @@ body {
 }
 .promo-img {
 	height: 435px;
-	background: url('http://layerdrops.com/loazzne/assets/images/about-2-1.jpg') no-repeat center
-		center;
+	background: url('http://layerdrops.com/loazzne/assets/images/about-2-1.jpg')
+		no-repeat center center;
 	background-size: cover;
 }
 .promo-img:before {
@@ -190,7 +194,8 @@ body {
 .third-promo-section {
 	z-index: 1;
 	position: relative;
-	background: #38373c url('http://layerdrops.com/loazzne/assets/images/ac-skew-1.jpg') center
+	background: #38373c
+		url('http://layerdrops.com/loazzne/assets/images/ac-skew-1.jpg') center
 		no-repeat;
 	background-size: cover;
 }
@@ -214,6 +219,25 @@ body {
 .cta-text:hover {
 	background-color: #0aaeb8ff;
 	color: white;
+}
+.footer-date {
+	font-size: 1.2em;
+}
+.order-photo {
+	width: 100%;
+	object-fit: fill;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.order-photo:hover {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.1);
+}
+.alert {
+	position: fixed;
+	bottom: 0;
 }
 @media screen and (max-width: 767px) {
 	.third-promo-section::after {

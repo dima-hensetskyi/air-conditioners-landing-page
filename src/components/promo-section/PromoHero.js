@@ -19,9 +19,9 @@ const PromoHero = () => {
 							Heating and air conditioning repair and installation company
 						</h2>
 						<p className="p mb-5 regular">
-							There are many variations of passages of lorem ipsum available, but the majorify have
-							suffered alteration in some form by injected humour, or randmised words which don't
-							look even slightly believable.
+							There are many variations of passages of lorem ipsum available, but the
+							majorify have suffered alteration in some form by injected humour, or
+							randmised words which don't look even slightly believable.
 						</p>
 						<button className="btn btn-app p-3">Learn more</button>
 					</Col>

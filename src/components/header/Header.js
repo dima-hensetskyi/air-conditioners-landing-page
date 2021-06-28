@@ -1,4 +1,12 @@
-import { Container, Navbar, Form, Button, FormControl, Row, Col } from 'react-bootstrap';
+import {
+	Container,
+	Navbar,
+	Form,
+	Button,
+	FormControl,
+	Row,
+	Col,
+} from 'react-bootstrap';
 import { getIcon } from './../common/Icon/Icons';
 const Header = () => {
 	return (
