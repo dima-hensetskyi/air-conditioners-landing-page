@@ -109,6 +109,9 @@ body {
 .regular {
 	font-size: 1.2em;
 }
+.regular-small {
+	font-size: 1em;
+}
 .promo-img {
 	height: 435px;
 	background: url('http://layerdrops.com/loazzne/assets/images/about-2-1.jpg')
@@ -151,6 +154,7 @@ body {
 .service-card img {
 	transition: 0.3s;
 }
+
 .service-card:hover > h2,
 .service-card:hover > p {
 	background-color: #38373c;
@@ -238,6 +242,26 @@ body {
 .alert {
 	position: fixed;
 	bottom: 0;
+}
+.link {
+	color: inherit;
+	cursor: pointer;
+}
+.link:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.main-modal {
+	border: 0;
+	background-color: rgba(10, 175, 184, 0.61);
+}
+.main-modal-item {
+	border: 0;
+	background-color: rgba(10, 175, 184, 0.61);
+}
+.modal-content {
+	border: 0;
+	background-color: rgba(10, 175, 184, 0.61);
 }
 @media screen and (max-width: 767px) {
 	.third-promo-section::after {

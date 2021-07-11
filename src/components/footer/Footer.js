@@ -1,11 +1,5 @@
-import {
-	Container,
-	Row,
-	Col,
-	Button,
-	Form,
-	FormControl,
-} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { AddNumberForm, Number } from '../header/Header';
 import { getIcon } from './../common/Icon/Icons';
 export const Footer = () => (
 	<Container fluid className="bg-dark text-white pt-2">
@@ -13,8 +7,8 @@ export const Footer = () => (
 			<Row>
 				<Col className="col-12 border-right border-secondary col-lg">
 					<p>
-						{getIcon('location')}Adress{' '}
-						<span className="text-secondary">66 Broklyn Street, New York</span>
+						{getIcon('location')}
+						<span className="text-secondary">{`Адреса: Львівська обл., м. Львів`}</span>
 					</p>
 				</Col>
 				<Col className="col-12 text-lg-center border-right border-secondary col-lg">
@@ -25,8 +19,7 @@ export const Footer = () => (
 				</Col>
 				<Col className="text-lg-center col-12 col-lg">
 					<p>
-						{getIcon('phoneCall')}Get a Quote{' '}
-						<span className="text-secondary">+38 064 577 41 31</span>
+						<Number type="footer" />
 					</p>
 				</Col>
 			</Row>
@@ -34,26 +27,16 @@ export const Footer = () => (
 		<Container className="pt-4">
 			<Row>
 				<Col className="col-12 col-md">
-					<h5>About BrandLink</h5>
+					<h5>Про BrandLink</h5>
 					<p className="text-secondary pr-lg-5 mr-lg-5">
-						At BrandLink, We don’t just provide resi-dential and commercial heating
-						and air conditioning services; we make people’s lives easier. Better.
+						Немає нічого кращого, ніж робота, що приносить задовлення. Кліматизація -
+						це те що ми любимо, вміємо та робимо. Наші майстри завжди залишають за
+						собою чистоту, якісну прохолоду та задоволених клієнтів.
 					</p>
 				</Col>
 				<Col>
-					<h5>Отримати консультацію спеціаліста</h5>
-					<Form inline>
-						<FormControl
-							placeholder="Ваш номер телефону"
-							required
-							type="tel"
-							className="mr-2 w-lg-50"
-							autoComplete="tel"
-						/>
-						<Button className="btn-app p-2 pl-3 pr-3 mt-3 mt-lg-0 ">
-							Замовити дзвінок
-						</Button>
-					</Form>
+					<h5 className="mb-3">Отримати консультацію спеціаліста</h5>
+					<AddNumberForm type="footer" />
 				</Col>
 			</Row>
 			<Row>

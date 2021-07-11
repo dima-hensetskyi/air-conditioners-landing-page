@@ -3,6 +3,7 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import InputElement from 'react-input-mask';
 import { useDispatch, useSelector } from 'react-redux';
+import { useRef } from 'react';
 
 import {
 	citiesArr,
@@ -13,10 +14,7 @@ import {
 } from '../common/formData';
 import { addNewOrder, editOrder } from '../../redux/actions/ordersActions';
 import { setShowAlert, setTabKey } from '../../redux/actions/adminActions';
-import { useRef } from 'react';
-
-const regExp =
-	/^\+?3?8?(\(0(67|68|96|97|98|66|95|99|63|93|73)\)\d{3}-\d{2}-\d{2})$/;
+import { regExpNumber } from '../common/regExp';
 
 const NewOrder = ({ data, type }) => {
 	const dispatch = useDispatch();
@@ -28,7 +26,9 @@ const NewOrder = ({ data, type }) => {
 
 	const text = Yup.string().required().max(250);
 	const OrderSchema = Yup.object().shape({
-		number: Yup.mixed().test('number', 'Nop', (value) => regExp.test(value)),
+		number: Yup.mixed().test('number', 'Nop', (value) =>
+			regExpNumber.test(value)
+		),
 		client: text,
 		responsible: text,
 		address: text,
@@ -47,7 +47,7 @@ const NewOrder = ({ data, type }) => {
 		return today;
 	};
 	const fileInput = useRef('fileInput');
-	console.log();
+
 	return (
 		<Container>
 			<h2 className="d-flex justify-content-center my-3">

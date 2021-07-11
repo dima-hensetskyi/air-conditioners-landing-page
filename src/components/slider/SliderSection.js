@@ -6,22 +6,22 @@ const SliderSection = (props) => {
 		<Carousel fade controls={false}>
 			<Carousel.Item interval={5000}>
 				<Slide
-					text={'Reliable Air Conditioning'}
-					title={'Installation Services & Repair'}
+					text={'Надійні системи кондиціонування'}
+					title={'Монтаж, обслуговування та ремонт'}
 					slide={1}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={5000}>
 				<Slide
-					text={'Quality that is Guaranteed'}
-					title={'Expert Repair Ac and Heating Services'}
+					text={'Гарантія якості робіт'}
+					title={'Експертний ремонт усіх типів кондиціонерів'}
 					slide={2}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={5000}>
 				<Slide
-					text={'Choose the Best Company'}
-					title={'Heating and Air Conditioning Specialist'}
+					text={'Обирайте професіоналів'}
+					title={'Більш ніж 8 років робіт з системами кондиціонування'}
 					slide={3}
 				/>
 			</Carousel.Item>
